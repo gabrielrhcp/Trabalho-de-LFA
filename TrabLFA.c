@@ -4,16 +4,16 @@
 #define true 1
 #define false 0
 
-// state 0 = 'x' e 'z'
-// state 1 = 'x' -> 'x', 'z' e 'v'
+// state 0 = 'x' ou 'z'
+// state 1 = 'x' -> 'x', 'z' ou 'v'
 // state 2 = 'y' -> 'y'
-// state 3 = 'z' -> 'z' e 'v' 
+// state 3 = 'z' -> 'z' ou 'v' 
 // state 4 = 'v'
 
 int teste(char *str, int aux, int state){
 
     if(strlen(str) != aux){
-        //INICIO
+        //STATE 0
         if(state == 0){
             if(str[aux] == 'x'){
                 aux++;
@@ -29,7 +29,6 @@ int teste(char *str, int aux, int state){
         }
 
         //STATE 1
-
         else if(state == 1){
             if(str[aux] == 'x'){
                 aux++;
@@ -79,7 +78,7 @@ int teste(char *str, int aux, int state){
         else if(state == 4){
             return false;        
         }
-
+    
     }else{
         return true;
     }

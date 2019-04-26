@@ -4,10 +4,11 @@
 #define true 1
 #define false 0
 
-// state 1 = x
-// state 2 = y
-// state 3 = z
-// state 4 = v
+// state 0 = 'x' e 'z'
+// state 1 = 'x' -> 'x', 'z' e 'v'
+// state 2 = 'y' -> 'y'
+// state 3 = 'z' -> 'z' e 'v' 
+// state 4 = 'v'
 
 int teste(char *str, int aux, int state){
 
@@ -76,9 +77,7 @@ int teste(char *str, int aux, int state){
 
         //STATE 4
         else if(state == 4){
-            if(str[aux] != '\0'){
-                return false;
-            }
+            return false;        
         }
 
     }else{

@@ -106,8 +106,8 @@ int main(){
             printf("\nNao e palvavra aceita pela linguagem\n");
         }
         printf("\n");
+        
         //MENU
-
         do{
             printf("[1]CONTINUAR\n[2]SAIR\nDIGITE: ");
             scanf("%d",&ctrl);

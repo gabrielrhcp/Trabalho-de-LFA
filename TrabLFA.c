@@ -9,11 +9,12 @@
 // state 2 = 'y' -> 'y'
 // state 3 = 'z' -> 'z' ou 'v' 
 // state 4 = 'v'
+// state 5 = final
 
 int teste(char *str, int aux, int state){
-
     if(strlen(str) != aux){
-        //STATE 0
+        
+        // STATE 0
         if(state == 0){
             if(str[aux] == 'x'){
                 aux++;
@@ -28,7 +29,7 @@ int teste(char *str, int aux, int state){
             }
         }
 
-        //STATE 1
+        // STATE 1
         else if(state == 1){
             if(str[aux] == 'x'){
                 aux++;
@@ -50,7 +51,7 @@ int teste(char *str, int aux, int state){
             }
         }
 
-        //STATE 2
+        // STATE 2
         else if (state == 2){
             if(str[aux] == 'y'){
                 aux++;
@@ -60,7 +61,7 @@ int teste(char *str, int aux, int state){
             }
         }
 
-        //STATE 3
+        // STATE 3
         else if(state == 3){
             if(str[aux] == 'z'){
                 aux++;
@@ -74,11 +75,12 @@ int teste(char *str, int aux, int state){
             }
         }
 
-        //STATE 4
+        // STATE 4
         else if(state == 4){
             return false;        
         }
     
+    // STATE 5
     }else{
         return true;
     }

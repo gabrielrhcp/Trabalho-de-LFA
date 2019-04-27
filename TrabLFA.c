@@ -5,10 +5,10 @@
 #define false 0
 
 // state 0 = 'x' ou 'z'
-// state 1 = 'x' -> 'x', 'z' ou 'v'
-// state 2 = 'y' -> 'y'
-// state 3 = 'z' -> 'z' ou 'v' 
-// state 4 = 'v'
+// state 1 = 'x' -> 'x', 'z', 'v' ou final
+// state 2 = 'y' -> 'y' ou final
+// state 3 = 'z' -> 'z', 'v' ou final 
+// state 4 = 'v' -> final
 // state 5 = final
 
 int teste(char *str, int aux, int state){

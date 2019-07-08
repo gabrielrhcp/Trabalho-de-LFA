@@ -1,4 +1,4 @@
-## Trabalho Final de Linguagens Formais e Autômatos.
+## Trabalho Final de Linguagens Formais e Autômatos - 2019.1
 
 O programa lê uma palavra de no máximo seis caracteres do usuário e verifica se ela é aceita pelo autômato abaixo.
 
